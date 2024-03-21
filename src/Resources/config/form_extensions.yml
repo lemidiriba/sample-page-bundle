@@ -1,1 +1,12 @@
 
+extensions:
+    acme-custom-root-element:                          # The unique key of your extension
+        module: pim/menu/tab                           # The module provided by akeneo for root elements
+        parent: pim-menu                               # The parent is the root of the menu
+        targetZone: mainMenu
+        # aclResourceId: my_custom_acl_key             # [optional] You can define a acl check - add this only if the acl has been created
+        position: 80                                   # [optional] The position in the tree where you want to add the item
+        config:
+            title: 'Sample Page'                              # You can define a translation key for the tab name (for example pim_menu.item.import_profile)
+            iconModifier: iconCard                     # [optional] The icon of the simple node
+            to: pim_importexport_import_profile_index # The route to redirect to
