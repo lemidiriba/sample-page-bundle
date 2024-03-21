@@ -1,0 +1,11 @@
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+  
+  pcmt_fhir.controller.rest.fhir_mapping:
+    class: 'PcmtFhirBundle\Controller\SamplePageController'
+    
+

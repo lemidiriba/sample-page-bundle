@@ -1,0 +1,4 @@
+config:
+  paths:
+    pcmt/fhir/attributes/tab/additional: pcmtfhir/js/attributes/form/tab/additional
+    pcmt/fhir/template/attribute/tab/additional: pcmtfhir/templates/attributes/tab/additional.html

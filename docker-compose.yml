@@ -1,0 +1,11 @@
+version: '6.0'
+
+services:
+  php:
+    image: 'akeneo/pim-php-dev:6.0'
+    environment:
+      XDEBUG_MODE: "coverage"
+    volumes:
+      - './:/srv/pim'
+      - '${HOST_COMPOSER_HOME:-~/.composer}:/var/www/.composer'
+    working_dir: '/srv/pim'

@@ -1,0 +1,30 @@
+{
+  "name": "pcmt/sample-page-bundle",
+  "description": "FHIR Bundle for PCMT",
+  "type": "library",
+  "license": "GPL-3.0-only",
+  "authors": [
+    {
+      "name": "Lemi Diriba",
+      "email": "lemi_diriba@et.jsi.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SamplePageBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SamplePageBundle\\Tests\\": "src/Tests/"
+    }
+  },
+  "require": {
+    "php": ">=7.2.0",
+    "akeneo/pim-community-dev": "^6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8",
+    "symplify/easy-coding-standard": "^6.1"
+  }
+}
